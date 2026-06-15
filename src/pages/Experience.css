@@ -1,0 +1,28 @@
+.timeline-section + .timeline-section {
+  margin-top: 2rem;
+}
+
+.timeline-section > h2 {
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-meta {
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.timeline-item ul {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+}
+
+.timeline-item li + li {
+  margin-top: 0.35rem;
+}

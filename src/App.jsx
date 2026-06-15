@@ -1,32 +1,28 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Experience from './pages/Experience'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Resume from './pages/Resume'
+import Skills from './pages/Skills'
 
 function App() {
   return (
-    <main className="page">
-      <header className="hero">
-        <p className="eyebrow">Personal landing page</p>
-        <h1>Fatema Alasbahi</h1>
-        <p className="bio">
-          Building thoughtful web experiences with modern tools. Welcome to my
-          corner of the internet.
-        </p>
-      </header>
-
-      <section className="links" aria-label="Contact links">
-        <a
-          href="https://github.com/fatemaalasbahi"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-        <a href="mailto:hello@example.com">Email</a>
-      </section>
-
-      <footer className="footer">
-        <p>Built with Vite + React · Deployed on Vercel</p>
-      </footer>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

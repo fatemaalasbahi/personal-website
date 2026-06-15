@@ -1,0 +1,25 @@
+.projects-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card p {
+  margin: 0.75rem 0 1rem;
+  color: var(--text-muted);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
