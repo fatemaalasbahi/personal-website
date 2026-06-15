@@ -35,6 +35,7 @@ function Experience() {
               <div className="timeline-meta">{item.period}</div>
               <h3>{item.title}</h3>
               <p className="subtitle">{item.org}</p>
+              {item.details && <p>{item.details}</p>}
             </article>
           ))}
         </div>

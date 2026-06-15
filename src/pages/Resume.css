@@ -14,6 +14,34 @@
   border-bottom: 1px solid var(--border);
 }
 
+.resume-intro {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.resume-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid var(--accent-border);
+  flex-shrink: 0;
+}
+
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-soft);
+  color: var(--text-strong) !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .resume-contact {
   display: flex;
   flex-direction: column;

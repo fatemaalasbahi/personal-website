@@ -15,7 +15,12 @@ function Projects() {
 
       <div className="projects-grid">
         {projects.map((project) => (
-          <article key={project.name} className="project-card card">
+          <article
+            key={project.name}
+            className={
+              project.highlight ? 'project-card card featured' : 'project-card card'
+            }
+          >
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <div className="tag-list">

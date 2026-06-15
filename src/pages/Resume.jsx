@@ -12,11 +12,18 @@ function Resume() {
   return (
     <section className="page-section resume-page">
       <header className="page-header resume-header">
-        <div>
-          <p className="eyebrow">Resume</p>
-          <h1>{site.name}</h1>
-          <p className="subtitle">{site.title}</p>
-          <p className="lead">{site.location}</p>
+        <div className="resume-intro">
+          <img
+            src={site.profilePhoto}
+            alt={`Portrait of ${site.name}`}
+            className="resume-photo"
+          />
+          <div>
+            <p className="eyebrow">Resume</p>
+            <h1>{site.name}</h1>
+            <p className="subtitle">{site.title}</p>
+            <p className="lead">{site.location}</p>
+          </div>
         </div>
         <div className="resume-contact">
           <a href={`mailto:${site.email}`}>{site.email}</a>
@@ -26,6 +33,9 @@ function Resume() {
           <a href={site.links.github} target="_blank" rel="noreferrer">
             GitHub
           </a>
+          <a href={site.resumePdf} download className="resume-download">
+            Download PDF
+          </a>
         </div>
       </header>
 
@@ -33,9 +43,10 @@ function Resume() {
         <h2>Summary</h2>
         <p>
           Computer science student at Memorial University with coursework and
-          certifications in high-performance computing and machine learning.
-          Experienced in Python-based data analysis, community interpretation,
-          and customer-facing roles. Fluent in Arabic and English.
+          certifications in high-performance computing, machine learning, and
+          cloud technologies. Experienced in Python-based data analysis,
+          databases, MySQL, AWS, Microsoft Azure, community interpretation, and
+          customer-facing roles. Fluent in Arabic and English.
         </p>
       </section>
 
@@ -62,6 +73,7 @@ function Resume() {
               <span>{item.period}</span>
             </div>
             <p className="subtitle">{item.org}</p>
+            {item.details && <p>{item.details}</p>}
           </article>
         ))}
       </section>

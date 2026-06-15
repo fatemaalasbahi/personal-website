@@ -5,6 +5,8 @@ export const site = {
     'I love to explore everything, learn constantly, and grow through new challenges.',
   location: "St. John's, Newfoundland, Canada",
   email: 'fatimaalasbahi96@gmail.com',
+  profilePhoto: '/profile.jpg',
+  resumePdf: '/Fatema-Alasbahi-Resume.pdf',
   links: {
     github: 'https://github.com/fatemaalasbahi',
     linkedin: 'https://ca.linkedin.com/in/fatima-alasbahi-858150219',
@@ -35,6 +37,11 @@ export const skills = {
     'Apache Spark',
     'High-Performance Computing (HPC)',
     'Data Analysis',
+    'Databases',
+    'MySQL',
+    'Cloud Computing',
+    'AWS',
+    'Microsoft Azure',
   ],
   languages: ['Arabic (fluent)', 'English (fluent)'],
 }
@@ -67,9 +74,11 @@ export const certifications = [
     period: 'Recent',
   },
   {
-    title: 'IBM Hackathon Watson X',
-    org: 'IBM',
-    period: 'Recent participant',
+    title: 'IBM x MUN watsonx Hackathon',
+    org: 'Team SFVS-Hackers',
+    period: 'May 2026',
+    details:
+      'Built an AI-powered offshore equipment escalation agent with IBM watsonx Orchestrate and watsonx.ai. Contributed UI/UX and frontend development.',
   },
 ]
 
@@ -79,7 +88,7 @@ export const work = [
     company: 'Buckmaster Community Center & Tambolo Festival',
     period: 'Present',
     bullets: [
-      'Provide interpretation support for community programs and festival events in St. John\'s.',
+      "Provide interpretation support for community programs and festival events in St. John's.",
     ],
   },
   {
@@ -103,6 +112,22 @@ export const work = [
 ]
 
 export const projects = [
+  {
+    name: 'Offshore Equipment Escalation Agent',
+    description:
+      'IBM x Memorial University watsonx Hackathon project with team SFVS-Hackers. An AI safety decision-support agent for offshore oil and gas operations that analyzes equipment logs and telemetry to flag risks, assign severity, and recommend actions using IBM watsonx Orchestrate and watsonx.ai. I contributed UI/UX and frontend development on the Streamlit dashboard.',
+    tech: [
+      'Python',
+      'Streamlit',
+      'IBM watsonx.ai',
+      'IBM watsonx Orchestrate',
+      'Plotly',
+      'LLM',
+    ],
+    github: 'https://github.com/portalzone/sfvs-hackers',
+    live: null,
+    highlight: true,
+  },
   {
     name: 'Cyber Attack Analysis',
     description:

@@ -7,9 +7,11 @@ function Home() {
     <section className="home">
       <div className="home-grid">
         <div className="profile-card">
-          <div className="avatar" aria-hidden="true">
-            FA
-          </div>
+          <img
+            src={site.profilePhoto}
+            alt={`Portrait of ${site.name}`}
+            className="avatar"
+          />
           <p className="eyebrow">{site.title}</p>
           <h1>{site.name}</h1>
           <p className="tagline">{site.tagline}</p>
@@ -23,6 +25,9 @@ function Home() {
               LinkedIn
             </a>
             <a href={`mailto:${site.email}`}>Email</a>
+            <a href={site.resumePdf} download>
+              Resume PDF
+            </a>
           </div>
         </div>
 
@@ -41,8 +46,9 @@ function Home() {
           <article className="panel">
             <h2>Featured project</h2>
             <p>
-              Cyber Attack Analysis — a Python data analysis project from my HPC
-              micro-credential exploring cybersecurity attack patterns.
+              Offshore Equipment Escalation Agent — an IBM watsonx Hackathon
+              project with team SFVS-Hackers, where I worked on UI/UX and
+              frontend development.
             </p>
             <Link to="/projects" className="text-link">
               View projects →
@@ -52,8 +58,8 @@ function Home() {
           <article className="panel">
             <h2>Resume</h2>
             <p>
-              Education, certifications, work experience, and skills — all in one
-              place.
+              Education, certifications, work experience, and skills — online or
+              as a downloadable PDF.
             </p>
             <Link to="/resume" className="text-link">
               View resume →
