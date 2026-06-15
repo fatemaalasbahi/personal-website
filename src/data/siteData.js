@@ -101,7 +101,7 @@ export const work = [
   },
   {
     role: 'Sales Representative & Marketing Team Member',
-    company: 'New Burlander (Baby Store)',
+    company: 'Newbornlander (Baby Store)',
     period: 'Previous role',
     bullets: [
       'Worked with customers on the sales floor and supported in-store marketing efforts.',
