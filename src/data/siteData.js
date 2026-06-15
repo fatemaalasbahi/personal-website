@@ -5,7 +5,6 @@ export const site = {
     'I love to explore everything, learn constantly, and grow through new challenges.',
   location: "St. John's, Newfoundland, Canada",
   email: 'fatimaalasbahi96@gmail.com',
-  profilePhoto: '/profile.jpg',
   resumePdf: '/Fatema-Alasbahi-Resume.pdf',
   links: {
     github: 'https://github.com/fatemaalasbahi',

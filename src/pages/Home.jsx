@@ -7,11 +7,6 @@ function Home() {
     <section className="home">
       <div className="home-grid">
         <div className="profile-card">
-          <img
-            src={site.profilePhoto}
-            alt={`Portrait of ${site.name}`}
-            className="avatar"
-          />
           <p className="eyebrow">{site.title}</p>
           <h1>{site.name}</h1>
           <p className="tagline">{site.tagline}</p>

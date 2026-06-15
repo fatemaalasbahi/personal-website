@@ -1,20 +1,13 @@
-import { about, site } from '../data/siteData'
+import { about } from '../data/siteData'
 import './About.css'
 
 function About() {
   return (
     <section className="page-section">
-      <header className="page-header about-header">
-        <img
-          src={site.profilePhoto}
-          alt={`Portrait of ${site.name}`}
-          className="about-photo"
-        />
-        <div>
-          <p className="eyebrow">About</p>
-          <h1>Who I am</h1>
-          <p className="lead">{about.intro}</p>
-        </div>
+      <header className="page-header">
+        <p className="eyebrow">About</p>
+        <h1>Who I am</h1>
+        <p className="lead">{about.intro}</p>
       </header>
 
       <div className="about-grid">

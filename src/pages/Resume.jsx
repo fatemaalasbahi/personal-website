@@ -12,18 +12,11 @@ function Resume() {
   return (
     <section className="page-section resume-page">
       <header className="page-header resume-header">
-        <div className="resume-intro">
-          <img
-            src={site.profilePhoto}
-            alt={`Portrait of ${site.name}`}
-            className="resume-photo"
-          />
-          <div>
-            <p className="eyebrow">Resume</p>
-            <h1>{site.name}</h1>
-            <p className="subtitle">{site.title}</p>
-            <p className="lead">{site.location}</p>
-          </div>
+        <div>
+          <p className="eyebrow">Resume</p>
+          <h1>{site.name}</h1>
+          <p className="subtitle">{site.title}</p>
+          <p className="lead">{site.location}</p>
         </div>
         <div className="resume-contact">
           <a href={`mailto:${site.email}`}>{site.email}</a>
