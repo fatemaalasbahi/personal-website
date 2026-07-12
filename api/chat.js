@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   try {
     const { text } = await generateText({
-      model: google('gemini-2.5-flash'),
+      model: google('gemini-3.5-flash'),
       system: buildSystemPrompt(),
       prompt: message.trim(),
     })
