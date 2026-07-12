@@ -144,5 +144,6 @@ export const navLinks = [
   { to: '/experience', label: 'Experience' },
   { to: '/projects', label: 'Projects' },
   { to: '/resume', label: 'Resume' },
+  { to: '/chat', label: 'Chat' },
   { to: '/contact', label: 'Contact' },
 ]
